@@ -1,0 +1,18 @@
+<ng-container
+    *ngTemplateOutlet="sec;context: {section: 'section 1'}" >
+</ng-container>
+
+<ng-container
+    *ngTemplateOutlet="sec;context: {section: 'section 2'}" >
+</ng-container>
+
+<ng-container
+    *ngTemplateOutlet="sec;context: {section: 'section 3'}" >
+</ng-container>
+
+<h3>Template demo</h3>
+<ng-template #sec let-title="section">
+  <div>
+    <span>{{title}}</span>
+  </div>
+</ng-template>

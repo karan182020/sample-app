@@ -7,11 +7,13 @@ import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient, withInterceptor
 import { MydirectiveDirective } from './directives/mydirective.directive';
 // import { RetryInterceptorProvider } from './interceptors/retry-provider';
 import { retryInterceptor } from './interceptors/retry.interceptor';
+import { SectionComponent } from './template-demo/section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MydirectiveDirective
+    MydirectiveDirective,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
