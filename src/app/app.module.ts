@@ -8,12 +8,16 @@ import { MydirectiveDirective } from './directives/mydirective.directive';
 // import { RetryInterceptorProvider } from './interceptors/retry-provider';
 import { retryInterceptor } from './interceptors/retry.interceptor';
 import { SectionComponent } from './template-demo/section/section.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MydirectiveDirective,
-    SectionComponent
+    SectionComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
